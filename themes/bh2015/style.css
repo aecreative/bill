@@ -4,7 +4,7 @@ Theme URI: http://aecreative.com/bh/
 Description: Theme for Bill Howe Plumbing for 2015
 Author: AE Creative
 Author URI: http://www.aecreative.com/
-Version: 1.0.0
+Version: 1.0.1
 Template: bridge
 */
 @import url("../bridge/style.css");
@@ -22,7 +22,9 @@ nav.main_menu>ul>li>a {
 	padding: 0 7px;
 	font-size: 11px;
 }
-
+.content .container .container_inner.page_container_inner {
+  padding-bottom: 30px;
+}
 /* rly? */
 .full_section_inner h1 {
 	margin-bottom: 1em !important;
@@ -37,6 +39,13 @@ h2 small {
 	font-size: 20px;
 	font-weight: 300;
 	text-transform: lowercase;
+}
+select.wpcf7-form-control.wpcf7-select {
+  line-height: 47px;
+  height: 47px;
+  padding: 0;
+  text-indent: 15px;
+  -webkit-appearance: menulist-button;
 }
 input.wpcf7-form-control.wpcf7-submit.qbutton.white, input.wpcf7-form-control.wpcf7-submit.qbutton.white:not([disabled]),
 input.wpcf7-form-control.wpcf7-submit.qbutton.white:hover, input.wpcf7-form-control.wpcf7-submit.qbutton.white:not([disabled]):hover {
@@ -64,8 +73,8 @@ input.wpcf7-form-control.wpcf7-submit.qbutton.white:hover, input.wpcf7-form-cont
 }
 .firstrow ul {
 	color: #000;
-	font-size: 16px;
-	line-height: 1.875;
+	font-size: 14px;
+	line-height: 1.5;
 }
 .title.has_background {
 	margin-top: 116px;
@@ -134,6 +143,7 @@ input.wpcf7-form-control.wpcf7-submit.qbutton.white:hover, input.wpcf7-form-cont
 	background: none;
 	color: #000;
 	line-height: 20px;
+  list-style: none;
 	text-transform: none;
 }
 .sidebar_shortcode ul.menu ul.sub-menu {
