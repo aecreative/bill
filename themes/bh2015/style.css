@@ -1,0 +1,232 @@
+/*
+Theme Name: BH 2015
+Theme URI: http://aecreative.com/bh/
+Description: Theme for Bill Howe Plumbing for 2015
+Author: AE Creative
+Author URI: http://www.aecreative.com/
+Version: 1.0.0
+Template: bridge
+*/
+@import url("../bridge/style.css");
+
+body { font-family: 'Arvo', sans-serif; }
+
+.light:not(.sticky):not(.scrolled) nav.main_menu>ul>li>a, .light:not(.sticky):not(.scrolled) nav.main_menu>ul>li>a:hover, .light:not(.sticky):not(.scrolled) nav.main_menu>ul>li.active>a, .light:not(.sticky):not(.scrolled) nav.main_menu>ul>li:before {
+	color: #333 !important;
+}
+nav.main_menu>ul {
+	left: -38%;
+	font-family: 'Montserrat', sans-serif;
+}
+nav.main_menu>ul>li>a {
+	padding: 0 7px;
+	font-size: 11px;
+}
+
+/* rly? */
+.full_section_inner h1 {
+	margin-bottom: 1em !important;
+}
+.content_inner p {
+	margin-bottom: 1.5em;
+}
+h2 {
+	padding-bottom: 8px;
+}
+h2 small {
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: lowercase;
+}
+input.wpcf7-form-control.wpcf7-submit.qbutton.white, input.wpcf7-form-control.wpcf7-submit.qbutton.white:not([disabled]),
+input.wpcf7-form-control.wpcf7-submit.qbutton.white:hover, input.wpcf7-form-control.wpcf7-submit.qbutton.white:not([disabled]):hover {
+	background-color: #333;
+}
+.qbutton.big_large_full_width {
+	font-size: 15px;
+	margin: 0 0 6px;
+}
+.content .container {
+	background-color: #fff;
+}
+.footer_top {
+	display: none;
+}
+.footer_bottom_holder {
+	background: #3e3e3e;
+	padding: 72px 0;
+}
+.footer_bottom p {
+	color: #fff;
+	font-family: Montserrat, sans-serif;
+	line-height: 26px;
+	margin: 41px 0;
+}
+.firstrow ul {
+	color: #000;
+	font-size: 16px;
+	line-height: 1.875;
+}
+.title.has_background {
+	margin-top: 116px;
+}
+.testimonials .testimonial_text_inner p {
+	font-size: 12px !important;
+	line-height: 20px !important;
+}
+.serviceexp,
+.serviceexp ul ul {
+	display: none;
+}
+.serviceexp {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: -80px;
+	padding: 65px 0;
+}
+.serviceexp h5 {
+	padding: 0 0 10px;
+}
+.header_bottom_widget p {
+	color: #ed1c24;
+	text-align: right;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+}
+.header_bottom_widget p a {
+	color: #2e3192;
+	font-size: 32px;
+	font-family: "Oswald", sans-serif;
+	position: relative;
+	top: 7px;
+}
+/* huh?! */
+.header_bottom_widget p a.livechat {
+	display: block;
+	width: 201px;
+	height: 32px;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	background: url(images/livechat.jpg) no-repeat 0 0;
+	text-align: left;
+	text-indent: -999em;
+}
+.sidebar_shortcode ul.menu {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar_shortcode ul.menu a {
+	text-transform: uppercase;
+	color: #ed1c24;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 43px;
+	padding-left: 65px;
+	background: url(images/plus.png) no-repeat left center;
+	display: block;
+	margin-bottom: 7px;
+}
+.sidebar_shortcode ul.menu a.opend {
+	background-image: url(images/minus.png)
+}
+.sidebar_shortcode ul.menu ul.sub-menu a {
+	background: none;
+	color: #000;
+	line-height: 20px;
+	text-transform: none;
+}
+.sidebar_shortcode ul.menu ul.sub-menu {
+	display: none;
+	padding-left: 0;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #333;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #333;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #333;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #333;
+}
+.footer_bottom ul.menu li a {
+	font-family: 'Montserrat', sans-serif;
+}
+/* reviews */
+
+#comments .commentlist{
+	margin: 0 0 20px;
+}
+#comments .commentlist .comment{
+	border-top:1px solid #CCC;
+	padding:10px 0;
+	margin: 0;
+}
+#comments .commentlist .comment .avatar{
+	float:left;
+	margin: 0 10px 10px 0;
+}
+#comments .commentlist .comment .comment-author,
+#comments .commentlist .comment .commentmetadata{
+	font-size:10px;
+	line-height:1.5em;
+	height:1.5em;
+}
+#comments .commentlist .comment .comment-author{
+	font-size:12px;
+}
+#comments .commentlist .comment .commentmetadata a{
+	color:#666;
+	text-decoration:none;
+}
+#comments .commentlist .comment .comment-body{
+	clear:both;
+}
+#comments .commentlist .comment .comment-body p{
+	padding:0;
+	margin: 0 0 1em;
+}
+#comments .commentlist .comment ul{
+	margin:1em 0 1em 0
+}
+#comments .comment-notes{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+}
+.lpPoweredBy, .lpEmtStarRating, #comments .form-allowed-tags{
+	display:none;
+}
+
+.ourreviews #comments { margin: 0 }
+.ourreviews #reply-title, .ourreviews .comment-notes { display: none }
+.ourreviews #commentform { display: none; padding: 15px 0; position: relative; margin: 0 0 31px }
+/*.ourreviews #submit { float: right; width: 65px; height: 25px; font: bold 13px/25px Arial, Helvetica, sans-serif; color: #fff; text-align: center; cursor: pointer; background: url(images/post-comment.jpg) no-repeat 0 0; border: none }*/
+.content_inner .ourreviews #commentform p.rating { position: absolute; left: 0; bottom: -1em; margin-bottom: 0 }
+.ourreviews #commentform .rating label { float: left; margin-right: 10px }
+.ourreviews #commentform .stars a { float: left; width: 21px; height: 19px; text-indent: -999em; background: url(images/stars.png) no-repeat 100% 0; margin-right: 2px }
+.ourreviews #commentform .stars a.on { 
+	background-position: 0 0;
+	background-position-x: 0%;
+	background-position-y: 0%;
+}
+/*
+.ourreviews #respond #comment { width: 424px }
+.ourreviews #commentform .comment-form-author input, .ourreviews #commentform .comment-form-email input, .ourreviews #commentform .comment-form-url input { width: 424px; padding: 0 3px }
+*/
+.page .content ol.commentlist li { color: #333 }
+.page .content .ourreviews ol.commentlist li .date { color: #999 }
+.page .content .ourreviews ol.commentlist li a { text-decoration: none }
+.ourreviews .comment-body .rating { float: left; width: 100%; margin-bottom: 10px }
+.ourreviews .comment-body .rating .star { float: left; width: 16px; height: 15px; margin: 0 1px 0 0; background: url(images/stars.png) no-repeat -16px -19px }
+.ourreviews .comment-body .rating .star.on { background-position: 0 100% }
+.ourreviews .comment-body h3 { margin: 15px 0 0 }
+
+@media (min-width: 768px) {
+	.stackfix { float: right }
+}

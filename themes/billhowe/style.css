@@ -1,0 +1,1410 @@
+/*
+Theme Name: Bill Howe
+Theme URI: http://billhowe.com/
+Description: Bill Howe Custom Theme by Ninthlink.
+Author: Ninthlink
+Version: 1.8
+*/
+/* fonts ? */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic);
+
+*{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+html{
+	overflow-x:hidden;
+}
+body{
+	background: none repeat scroll 0 0 #F4F4F4;
+    color: #494949; 
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:62.5%;
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+	font-size:12px;
+	margin: 0 auto;
+    width: 963px;
+}
+.hide{
+	display:none;
+}
+br.clear-fix{
+	clear:both;
+	height:1px;
+	line-height:0;
+}
+.edit-link{
+	position:absolute;
+	top:5px;
+	right:6px;
+	height:28px;
+	line-height:30px;
+	background:#F0F0F0;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+}
+.edit-link a{
+	color:#666;
+	padding: 0 7px;
+	display:block;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.text-align-right{
+	text-align:right;
+}
+a img{
+	border:none;
+}
+.alignleft{
+	float:left;
+	margin: 3px 10px 10px 0 !important;
+}
+.alignright{
+	float:right;
+	margin: 3px 0 10px 10px !important;
+}
+.hd{
+	background:#FFF url(images/bg/hd.jpg) top left repeat-x;
+	border-bottom: 1px solid #FFF;
+	height:107px;
+	position:relative;
+	z-index:1000;
+}
+.hd .logo{
+	position:relative;
+	float:left;
+	top:5px;
+	left:0px;
+}
+.hd .phone{
+	background:none;
+	width:447px;
+	height:36px;
+	position:relative;
+	float:left;
+	margin: 25px 0 0;
+}
+.hd .phone h2 {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	font-size: 32px;
+	line-height: 36px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	color: #425e8a;
+}
+.hd .phone.def h2 {
+	float: right;
+	width: 212px;
+	height: 45px;
+	text-align: left;
+	text-indent: -999em;
+	background: url(images/phone2.png) no-repeat 0 0;
+	position: relative;
+	top: -9px;
+}
+.hd .menuWrap{
+	background: url(images/bg/menu.jpg) top left repeat-x;
+	position:absolute;
+	bottom:-1px;
+	left:0;
+	width:100%;
+	height:33px;
+}
+.hd .menuWrap ul{
+	display:block;
+	width:963px;
+	margin: 0 auto;
+	position:relative;
+}
+.hd .menuWrap li{
+	display:inline;
+	line-height:33px;
+	font-weight:bold;
+	float:left;
+	position:relative;
+}
+.hd .menuWrap li a{
+	color:#FFF;
+	display:inline-block;
+	padding:0 43px;
+	text-decoration:none;
+}
+.hd .menuWrap li a:hover,
+.hd .menuWrap li.current a{
+	background: url(images/bg/menu-hover.jpg) top left repeat-x;
+}
+.hd .menuWrap ul li ul{
+	display:none;
+}
+.hd .menuWrap ul li:hover ul{
+	position:absolute;
+	top:33px;
+	background:#999;
+	display:block;
+	z-index:100;
+	width:290px;
+	margin: 0 0 2px 0;
+	border:1px solid #666;
+}
+.hd .menuWrap ul li ul li,
+.hd .menuWrap ul li ul li a{
+	display:block;
+	float:none;
+	height:28px;
+	line-height:28px;
+	overflow:hidden;
+	background: url(images/bg/h1-grey.jpg) left center repeat-x;
+	color:#f3f3f3;
+	border:1px solid #696969;
+	border-width: 0 0 1px;
+}
+.hd .menuWrap ul li ul li a:hover{
+	background:#696969;
+	color:#FFF;
+}
+.hd .menuWrap ul li ul li a:active{
+	background:#696969;
+	color:#FFF;
+}
+.bd{
+	background: url("images/bg/body.jpg") repeat-x scroll left top #03A0F2;
+    border-bottom: 1px solid #CECDCD;
+}
+.bd .wrap{
+	overflow:hidden;
+}
+.page-blue{
+	background: url("images/bg/body-blue.jpg") repeat-x scroll left top #FFF;
+}
+.page-maroon{
+	background: url("images/bg/body-maroon.jpg") repeat-x scroll left top #FFF;
+}
+.page-blue-dark{
+	background: url("images/bg/body-blue-dark.jpg") repeat-x scroll left top #FFF;
+}
+.page-green{
+	background: url("images/bg/body-green.jpg") repeat-x scroll left top #FFF;
+}
+.page-gray{
+	background: url("images/bg/body-gray.jpg") repeat-x scroll left top #FFF;
+}
+.bd .sub-menu{
+	height:33px;
+	line-height:33px;
+	position:relative;
+}
+.bd ul.sub-menu{
+	height:auto;
+}
+.bd .sub-menu .breadcrumbs{
+	background:url(images/icons/home.png) left center no-repeat;
+	padding: 0 0 0 18px;
+	position:absolute;
+	left:0;
+	font-size:11px;
+	color:#FFF;
+}
+.bd .sub-menu .breadcrumbs a{
+	color:#D9D9D9;
+	text-decoration:none;
+	margin: 0 5px 0;
+	color:#D9D9D9;
+	display:inline;
+	font-size:11px;
+}
+.bd .sub-menu .breadcrumbs a.page { background: none; box-shadow: none }
+.bd .sub-menu .breadcrumbs a:hover{
+	text-decoration:underline;
+}
+.hd .social{
+	line-height:1px;
+	position:absolute;
+	right:50%;
+	bottom: 0;
+	margin-right: -480px;
+	z-index: 1002;
+	width:110px;
+}
+.hd .gp.home{
+	position:absolute;
+	bottom:4px;
+	right:50%;
+	z-index:1002;
+	margin-right: -398px;
+}
+.home .bd .buttons .gp{
+	position: relative;
+
+	top: -24px;
+	left: 4px;
+}
+.hd .lpStaticButton { float: left; position: relative; top: 12px; left: 17px }
+.hd .lpPoweredBy { display: none }
+.hd .lpEmtStarRating { display: none }
+.hd .social .rss,
+.hd .social .fb,
+.hd .social .tw,
+.hd .social .yt,
+.hd .social .gp {
+	padding:5px 2px;
+	text-indent:-10000px;
+	overflow:hidden;
+	width: 23px;
+	height:23px;
+	float:left;
+}
+.hd .social .rss{
+	background:url(images/icons/rss.png) center no-repeat;
+}
+.hd .social .fb{
+	background:url(images/icons/facebook.png) center no-repeat;
+}
+.hd .social .tw{
+	background:url(images/icons/twitter.png) center no-repeat;
+}
+.hd .social .yt{
+	background:url(images/icons/youtube.png) center no-repeat;
+}
+.hd .social .gp{
+	background:url(images/icons/icon-google+.png) center no-repeat;
+}
+.hd .search{
+	position:absolute;
+	width:155px;
+	height:33px;
+	right:50%;
+	bottom: 0;
+	margin-right: -312px;
+	z-index:1001;
+}
+.hd .search label{
+	position:absolute;
+	z-index:10;
+	top:1px;
+	left:4px;
+	color:#999;
+}
+.hd .search input#s{
+	font-size: 11px;
+	font-size:13px;
+	padding:0;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 151px;
+    z-index: 5;
+}
+.hd .search input#searchsubmit{
+	background: url(images/icons/search.png) center no-repeat;
+	width:12px;
+	height:10px;
+	position:absolute;
+	z-index:10;
+	top:12px;
+	right:3px;
+	border:none;
+	padding:12px 0 0 12px;
+	overflow:hidden;
+}
+.bd .page{
+	background:#FFF;
+	box-shadow: 2px 2px #000;
+}
+body.search .bd .main .hentry.page { box-shadow: none; background: none }
+.bd .page.new {
+	float:left;
+}
+.bd .page .banner{
+	z-index:1px;
+	height:215px;
+	width: 740px;
+}
+
+.home .bd .page .banner{
+	height:210px;
+	width: 640px;
+	float:left;
+}
+#pgr { float: right; margin: 0; padding: 0; list-style: none; position: relative; top: -10px }
+#pgr li { float: left; margin: 0 0 0 4px }
+#pgr a { float: left; width: 9px; height: 9px; background: url(images/dots.gif) no-repeat 100% 0 }
+#pgr li.activeSlide a { background-position: 0 0 }
+
+.bd .page .buttons.new { float: left; width: 320px; height: 210px; margin-left: -7px; position: relative; z-index: 9999; background: url(images/bg/hcolsh1.png) no-repeat 0 0; padding-left: 7px }
+.bd .page .buttons ul{
+	float:left; width: 320px; height: 210px; margin: 0; padding: 0;
+}
+.bd .page .buttons ul li{
+	float:left;
+	width:320px;
+	height:70px;
+}
+.bd .page .buttons ul li a{
+	text-indent:-1000px;
+	float: left;
+	width: 320px;
+	display:block;
+	height:70px;
+	background:url(images/btns/home.png) no-repeat 0 0;
+}/*
+.bd .page .buttons ul li a.plumbing{
+	background:url(images/btns/home/plumbing.jpg) center no-repeat;
+}*/
+.bd .page .buttons ul li a.hvac{
+	background-position: 0 -70px;
+}/*
+.bd .page .buttons ul li a.design{
+	background:url(images/btns/home/design.jpg) center no-repeat;
+}*/
+.bd .page .buttons ul li a.restoration{
+	background-position: 0 -140px;
+}
+
+.cnew { float: left; width: 281px; height: 315px; margin: 31px 13px 9px; background: url(images/bg/contact-long.png) no-repeat 0 0; padding: 27px 0 0 12px }
+
+input.ctxt, textarea.ctxt { float: left; width: 254px; height:16px; border-radius: 5px; padding: 4px 7px; font: 13px/16px Arial, Helvetica, sans-serif; border: 1px solid #d2d2d2; margin: 0 0 6px }
+input.ctxt.h { margin-right: 10px; width: 114px }
+div.wpcf7 input.ctxt.watermark { font-style: italic }
+textarea.ctxt { height: 75px }
+input.csub { border: none; background: none; cursor: pointer; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #fff; background: url(images/btns/csub.png) no-repeat 0 0; width: 100px; height: 27px; float: left; }
+
+.side .cnew { width: 203px; height: 384px; background-image: url(images/bg/contact2-long.png) }
+.side input.ctxt, .side textarea.ctxt, .side input.ctxt.h { margin-right: 0; width: 178px }
+.side .cnew.ns { height: 153px; background-image: url(images/bg/newsletter-right.png) }
+.page .content .side ul.newbtns, .newbtns { float: left; width: 186px; padding: 0; background: none; margin: 22px 22px 0; list-style: none }
+.newbtns { width: 279px; padding: 0 0 2px; background: url(images/icons/newbtnbg.gif) repeat-x 0 100% }
+.newbtns li, .page .content .side ul.newbtns li { float: left; width: 70px; margin: 0 11px 28px }
+.page .content .side ul.newbtns li { margin-bottom: 8px }
+.newbtns li a { float: left; width: 70px; padding-top: 73px; font-size: 13px; text-transform: uppercase; font-weight: bold; color: #333; text-decoration: none; text-align: center; background: url(images/icons/new.png) no-repeat 0 0 }
+.newbtns li.green a { background-position: -70px 0 }
+.newbtns li.coupons a { background-position: -140px 0 }
+.newbtns li.awards a { background-position: -210px 0 }
+.newbtns li.guar a { background-position: -280px 0 }
+.newbtns li.revs a { background-position: -350px 0 }
+
+.wrap .page .lpStaticButton { float:left; margin: 0 }
+.wrap .page .lpPoweredBy { display: none }
+.wrap .page .lpEmtStarRating { display: none }
+.wrap .page #hcol2 .lpStaticButton { margin: 28px 0 0 43px }
+
+.hblc { float: left; background: #fff; border: 1px solid #cfcfcf; width: 250px; padding: 19px; height: 315px; margin: 0 0 19px }
+.hblc.c2 { margin-left: 20px }
+.hblc.sh { height: 228px }
+.hblc h3.hbt { font: 18px/120% Arial, Helvetica, sans-serif; margin: 0 0 10px; color: #000 }
+.hblc img { border: 3px solid #fff; padding: 0; display: block; margin: 0 -4px 10px; box-shadow: 0 0 1px #000 }
+.hblc p { font: 13px/18px Arial, Helvetica, sans-serif; color: #000 }
+.hcol1 .hblc a { color: #017ac3; text-decoration: none; font-weight: normal }
+.hblc a.nbtn { float: left; font: bold 12px/16px Arial, Helvetica, sans-serif; padding: 4px 10px; color: #fff; text-decoration: none; background: url(images/btns/nb.gif) repeat-x 0 0; border-radius: 5px }
+.hblc a.ythm { float: left; width: 251px; height: 111px; border: 3px solid #fff; box-shadow: 0 0 1px #000; overflow: hidden; margin: 0 -4px 10px; position: relative }
+.hblc a.ythm img { padding: 0; border: none; box-shadow: none; position: relative; margin: -39px 0 0; width: 251px; height: auto; position: relative; z-index: 1 }
+.hblc a.ythm .p { display: block; width: 55px; height: 68px; background: url(images/btns/play.png) no-repeat 0 0; position: absolute; left: 98px; top: 21px; z-index: 2 }
+.hblc input.ctxt { width: 234px }
+.hblc input.csub { margin-top: 15px }
+
+.ft{
+	margin:10px 0 20px;
+}
+.ft .pageList{
+	float:left;
+	width:565px;
+}
+.ft .pageList ul li{
+	float:left;
+	width:110px;
+	vertical-align:top;
+}
+.ft .wrap { width: 927px }
+.ft .pageList ul li a{
+	font-weight:bold;
+	color:#9A9999;
+	text-decoration:none;
+	line-height:350%;
+	font-size:11px;
+}
+.ft .pageList ul li ul li{
+	display:block;
+}
+.ft .pageList ul li ul li a{
+	font-weight:normal;
+	color:#9A9999;
+	margin:0;
+	line-height:250%;
+	font-size:10px;
+}
+.ft .pageList ul li ul li a:hover{
+	color:#807E7E;
+}
+.ft .footer-menu{
+	float:left;
+	width:100%;
+	line-height:20px;
+}
+.ft .footer-menu ul li{
+	display:inline;
+	font-weight:bold;
+	padding: 0 8px;
+	border-right:1px solid #9A9999;
+	font-size:13px;
+	line-height:21px;
+}
+.ft .footer-menu ul li.first { padding-left: 0 }
+.ft .footer-menu ul li:last-child{
+	padding: 0 0 0 8px;
+	border:none
+}
+.ft .footer-menu ul li a{
+	text-decoration:none;
+	color:#333;
+}
+.ft .footer-menu ul li a:hover{
+	color:#807E7E;
+}
+.ft .footer-menu .copyright p,
+.ft .footer-menu .affiliates{
+	text-align:left;
+	color:#333;
+	font-size:12px;
+	margin: 5px 0 15px;
+}
+
+/* Start of Column CSS */
+#container3 {
+	background: none repeat scroll 0 0 #EBEAEA;
+    clear: left;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+	position:relative;
+}
+#container2 {
+	background: url("images/bg/gray-gradient.jpg") repeat-x scroll left top #EBEAEA;
+    clear: left;
+    float: left;
+    position: relative;
+    right: 29.333%;
+    width: 100%;
+}
+#container1 {
+	background: none repeat scroll 0 0 #EBEAEA;
+    float: left;
+    position: relative;
+    right: 36.33%;
+    width: 100%;
+}
+#container3.hcols { width: 960px; background: url(images/bg/hcols.png) repeat-y 0 0 }
+.hcol1 { float: left; width: 600px; padding: 20px; background: url(images/bg/hcol1.png) repeat-x 0 0; }
+#hcol2 { float: right; width: 320px; padding-left: 7px; margin-left: -7px; background: url(images/bg/hcolsh2.png) no-repeat 0 0 }
+#col1 {
+	float: left;
+    left: 67.67%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    width: 29.33%;
+}
+#col2 {
+	float: left;
+    left: 72.67%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    width: 30.33%;
+}
+#col2 h2 a{
+	color:#666666;
+	text-decoration:none;
+}
+#col2 h2 a:hover{
+	color:#333;
+}
+#col3 {
+	float: left;
+    left: 74.67%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 31.33%;
+}
+#container3 h2{
+	color: #666666;
+    font: 22px arial;
+    margin: 0 0 20px;
+}
+#container3 p{
+	font: 12px/19px arial;
+	margin: 0 0 1em;
+}
+#container3 #hcol1 p { line-height: 15px }
+#container3 p.text-align-right a{
+	font-style:italic;
+	font-weight:bold;
+	color:#494949;
+	text-decoration:none;
+}
+/* End Three Column Layout */
+/*Start Two Column Layout */
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	-moz-border-radius: 5px 5px 0 0;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+	border-width: 1px 1px 0 1px;
+}
+.leftmenu .colleft {
+	right:739px;			/* right column width */
+	background:#f4f4f4 url(images/bg/h1-grey.jpg) 0 0 repeat-x;/* left column background colour */
+	border-right:1px solid #CCC;
+	-moz-border-radius: 5px 0 0 0;
+}
+.leftmenu .col1 {
+	left: 963px;
+    width: 740px;
+	min-height: 500px;
+	background: url(images/bg/rcol.gif) repeat-y 100% 0;
+}
+.leftmenu .col2 {
+	width:200px;			/* left column content width (column width minus left and right padding) */
+	left:10px;			/* (right column left and right padding) plus (left column left padding) */
+}
+/* End 2 Column Layout */
+.newsletterSignup{
+	background:url(images/bg/newsletter.jpg) center no-repeat;
+	height:162px;
+}
+.newsletterSignup form{
+	padding: 90px 40px 0 30px;
+}
+.newsletterSignup label{
+	color:#FFF;
+}
+.newsletterSignup td.text-align-right{
+	padding:0 10px 0 0;
+}
+.newsletterSignup .newsletterSignupBottom{
+	text-align:right;
+}
+.newsletterSignup #sendNewsletterSignup{
+	margin:7px 0 0;
+}
+.go-green{
+	margin: 0;
+	padding:0;
+}
+.go-green a{
+	display:block;
+}
+.side .contact{
+	background:#F0F0F0;
+	border:1px solid #CCC;
+}
+/* - - - PAGE STYLES - - - - */
+.page{
+	
+}
+.page .col1 h1{
+	background:#505050 url(images/bg/h1-grey.jpg) 0 0 repeat-x;
+	padding:0 15px 0;
+	color:#FFF;
+	font-weight:normal;
+	height:42px;
+	line-height:42px;
+	-moz-border-radius: 0 6px 0 0;
+}
+.page .content{
+	padding:20px;
+}
+.page .content .main{
+	float:left;
+	width:456px;
+}
+.page .content .side{
+	float:right;
+	width:236px;
+	position:relative;
+	right:-19px;
+	top:-20px;
+}
+.main a, .hcol1 a { color: #0E67A9; font-weight: bold; text-decoration: none }
+
+.page .content h1,
+.page .content h2,
+.page .content h3,
+.page .content h4,
+.page .content h5,
+.page .content h6{
+	background:none;
+	line-height:normal;
+	color:#333;
+	height:auto;
+	padding:0 0 1em;
+	font-size:20px;
+	-moz-border-radius:0;
+}
+.page .content h2{
+	font-size:24px;
+	font-weight: normal;
+	color:#ee0202;
+	padding-bottom: 10px;
+}
+.page .content h3{
+	font-size:14px;
+}
+.page .content h4,
+.page .content h5,
+.page .content h6{
+	font-size:12px;
+	font-weight:bold;
+}
+.page .content p{
+	line-height:150%;
+	margin: 0 0 1em;
+	color:#676767;
+}
+.page .content ul,
+.page .content ol{
+	margin: 0 0 1em 30px;
+}
+.page .content ul li,
+.page .content ol li{
+	list-style-type:disc;
+	line-height:200%;
+	color:#676767;
+}
+.page .content ol li{
+	list-style-type:decimal;
+	line-height:150%;
+	padding: 0 0 10px
+}
+.page .content .side ul {
+	margin:0;
+	padding:0;
+}
+.page .content .side ul li{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.page .content .side li.newsletterSignupSidebar {
+	line-height:0px;
+	margin: 0 0 20px;
+}
+.page .content .side li.newsletterSignupSidebar table{
+	background:url(images/bg/newsletter-signup-bg.jpg) top left repeat-x;	
+}
+
+.page .content .side .newsletterSignupSidebar table td{
+	padding:5px;
+}
+.page .content .side .newsletterSignupSidebar td label{
+	color:#FFF;
+}
+.page .content .side .newsletterSignupSidebar td.newsletterSignupBottom{
+	background:url(images/bg/gray-bottom.jpg) center no-repeat;
+	height:24px;
+	line-height:24px;
+	text-align:right;
+	padding:0;
+}
+.page .content .side .newsletterSignupSidebar .newsletterSignupBottom .wpcf7-submit,
+.newsletterSignup .wpcf7-submit{
+	color:#FFF;
+	text-decoration:underline;
+	font-weight:bold;
+	padding: 0;
+	margin:0;
+	background:none;
+	border:none;
+	font-size:12px;
+}
+.wpcf7-response-output {
+	line-height:133%;
+}
+
+.page .content .side .newsletterSignupSidebar td .wpcf7-text,
+.newsletterSignup .wpcf7-text{
+	width:160px;
+}
+
+.page .content .side li.links{
+	margin:0;
+}
+.page .content .side li.links ul{
+	border:1px solid #DADADA;
+	border-width:1px 1px 0 1px;
+}
+.page .content .side li.links ul li a{
+	background:#E2E2E2 url(images/bg/links.jpg) top right no-repeat;
+	line-height:40px;
+	font-size:16px;
+	font-weight:bold;
+	padding: 2px 30px 0 10px;
+	border-bottom: 1px solid #DADADA;
+	color:#666;
+	text-decoration:none;
+	display:block;
+}
+.page .content .side li.links ul li.newsletter a{
+	background:#E2E2E2 url(images/bg/links-newsletter.jpg) top right no-repeat;
+}
+.page .content .side li.contact{
+	padding:20px 10px;
+}
+/* - - - LEFT SIDE BAR - - - */
+.leftmenu .col2 .inner,
+.leftmenu .col2 .blogSidebar{
+	padding:41px 0 20px;
+}
+.leftmenu .col2 .inner ul li,
+.leftmenu .col2 .blogSidebar ul li{
+	margin:20px 0 0;
+}
+.leftmenu .col2 .inner h3.widget-title,
+.leftmenu .col2 .blogSidebar h3.widget-title{
+	font-weight:normal;
+	font-size:16px;
+	margin: 0 0 20px;
+}
+.leftmenu .col2 .blogSidebar h3.widget-title{
+	margin: 0 0 1em;
+}
+.leftmenu .col2 .inner ul ul{
+	border-style:solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #FFF #DADADA #CCC #DADADA;
+}
+.leftmenu .col2 .inner ul ul li,
+.leftmenu .col2 .blogSidebar ul ul li{
+	margin:0;
+}
+.leftmenu .col2 .inner ul ul li a{
+	color:#818080;
+	text-decoration:none;
+	display:block;
+	line-height:18px;
+	height:auto;
+	overflow:hidden;
+	padding: 7px 5px 6px 22px;
+	background:#EDEDED url(images/bg/accordion.jpg) 0 0 no-repeat;
+	font-size:13px;
+	font-weight:bold;
+	border:1px solid #DADADA;
+	border-width: 1px 0;
+}
+.leftmenu .col2 .inner ul ul li.current-menu-parent a{
+	background:#FBFBFB url(images/bg/accordion-open.jpg) 0 0 no-repeat;
+}
+.leftmenu .col2 .inner ul ul li.current-menu-parent ul li a{
+	background:none;
+}
+.leftmenu .col2 .inner ul ul li.current-menu-item{
+	color:#333;
+}
+
+.leftmenu .col2 .inner ul ul li.current-menu-parent>a,
+.leftmenu .col2 .inner ul ul li.current-menu-parent .current-menu-item a,
+.leftmenu .col2 .inner ul ul li a:hover,
+.leftmenu .col2 .inner ul ul li.current-menu-parent ul li a:hover{
+	color:#333;
+}
+.leftmenu .col2 .inner ul ul li.current-menu-item a,
+.leftmenu .col2 .inner ul ul li.current-menu-parent .current-menu-item a{
+	color:#000;
+}
+.leftmenu .col2 .inner ul ul li ul{
+	border:none;
+	display:none;
+	margin: 0;
+}
+.leftmenu .col2 .inner ul ul li.current-menu-parent ul{
+	display:block;
+}
+.leftmenu .col2 .inner ul ul li.open ul{
+	display:block;
+}
+.leftmenu .col2 .inner ul ul li ul li a{
+	height:30px;
+	line-height:28px;
+	background:none;
+	font-size:12px;
+	padding: 0 5px 0 20px;
+	border:none;
+}
+.leftmenu .col2 .inner ul ul li.open ul li a{
+	color:#818080;
+}
+/* - - - BLOG SIDEBAR - - - */
+.leftmenu .col2 .blogSidebar ul ul ul{
+	margin: 0 0 30px 0;
+	border-style:solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #FFF #DADADA #CCC #DADADA;
+}
+.leftmenu .col2 .blogSidebar ul ul ul li a{
+	color:#818080;
+	text-decoration:none;
+	display:block;
+	height:31px;
+	overflow:hidden;
+	line-height:31px;
+	padding: 0 5px 0 22px;
+	background:#EDEDED url(images/bg/accordion.jpg) 0 0 no-repeat;
+	font-size:13px;
+	font-weight:bold;
+	border:1px solid #DADADA;
+	border-width: 1px 0;
+}
+/* - - - BLOG STYLES - - - */
+.hentry a{
+	color:#333;
+}
+.hentry .entry-title{
+	margin:0;
+}
+.hentry .entry-title a {
+	color:#333;
+}
+.main .hentry a {
+	font-weight: normal;
+	text-decoration: underline;
+}
+.hentry .entry-meta{
+	text-transform:uppercase;
+	font-size:10px;
+	color:#666;
+	margin: 0 0 1.5em;
+}
+.hentry .entry-content{
+	line-height: 1.33em;
+	margin: 0 0 1.5em;
+}
+.hentry .entry-utility{
+	text-transform:uppercase;
+	height:28px;
+	line-height:31px;
+	padding: 0 5px;
+	font-size:10px;
+	background:#f6f6f6;
+	border-bottom:1px solid #CCC;
+	margin: 0 0 3em
+}
+	
+/* - - - FORM OVERRIDES - - - */
+.main form.wpcf7-form {
+	border:1px solid #CCC;
+    background: none repeat scroll 0 0 #f5f5f5;
+    font-size: 12px;
+    margin: 20px 10px;
+    max-width: 574px;
+    padding: 17px;
+	width:auto;
+}
+.main form.wpcf7-form table td{
+	vertical-align:top;
+	padding:2px 0;
+}
+.main form.wpcf7-form table td.label{
+	padding:6px 5px 2px 0;
+	text-align:right;
+}
+.main form.wpcf7-form .text,
+.main form.wpcf7-form .textarea{
+	width:300px;
+	border:1px solid #999;
+	background:#FFF;
+	padding:3px;
+	-moz-border-radius:3px;
+}
+.main form.wpcf7-form .wpcf7-submit{
+	border:1px solid #999;
+	padding:6px 6px 6px 19px;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+	background:#f3f3f3 url(images/bg/accordion.jpg) left center no-repeat;
+	cursor: pointer;
+	-moz-border-radius:3px;
+}
+.cat-name{
+	display:none;
+}
+.widget_nrc ul{
+	margin:0 !important;
+	border-width:0 !important;
+}
+.widget_nrc ul ul{
+	border-style:solid !important;
+	border-width: 1px 1px 1px 1px !important;
+	border-color: #FFF #DADADA #CCC #DADADA !important;
+}
+/*#commentform label{
+	display:block;
+	text-transform:uppercase;
+	font-size:10px;
+}*/
+.navigation{
+	height:100px;
+}
+.navigation .nav-previous a,
+.navigation .nav-next a{
+	color:#333;
+	font-size:10px;
+	text-transform:uppercase;
+}
+.navigation .nav-previous{
+	float:left;
+}.navigation .nav-next{
+	float:right;
+}
+#searchsubmit{
+	background: url(images/icons/search.png) center no-repeat;
+	width:12px;
+	height:10px;
+	position:absolute;
+	right:2px;
+	top:4px;
+	border:none;
+	text-indent:-999px;
+	overflow:hidden;
+}
+#nav-above{
+	display:none;
+}
+span.wpcf7-not-valid-tip {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #FF0000;
+    font-size: 10px !important;
+    left: 0 !important;
+    padding: 9px !important;
+    position: absolute;
+    top: auto !important;
+    width: 146px !important;
+    z-index: 100;
+	height:1px;
+}
+.gallery .gallery_image{
+	margin: 0 3px 3px 0;
+	padding: 2px;
+	border:1px solid #ccc;
+}
+
+/* Main menu settings */
+.centeredmenu {
+	clear:both;
+	float:left;
+	margin:0;
+	padding:0;
+	background: url(images/bg/menu.jpg) top left repeat-x;
+	width:100%;
+	height:33px;
+	z-index:1000; /* This makes the dropdown menus appear above the page content below */
+	position:absolute;
+	bottom:-1px;
+	left:0;
+}
+
+/* Top menu items */
+.centeredmenu ul {
+   margin:0 0 0 -483px;
+   padding:0;
+   list-style:none;
+   float:left;
+   position:relative;
+   top:0;
+   left:50%;
+}
+.centeredmenu ul li {
+   margin:0 0 0 1px;
+   padding:0;
+   float:left;
+   position:relative;
+   top:1px;
+   line-height:33px
+}
+.centeredmenu ul li a {
+   display:block;
+   margin:0;
+   padding:0 28px 0 20px;
+   font-size:1em;
+   line-height:31px;
+   text-decoration:none;
+   color:#FFF;
+   font-weight:bold;
+}
+.centeredmenu ul li.active a {
+   color:#fff;
+   background:#000;
+}
+.centeredmenu ul li a:hover {
+   background: url(images/bg/menu-hover.jpg) top left repeat-x;
+   color:#fff;
+}
+.centeredmenu ul li:hover a,
+.centeredmenu ul li.hover a { /* This line is required for IE 6 and below */
+   background: url(images/bg/menu-hover.jpg) top left repeat-x;
+   color:#fff;
+}
+
+/* Submenu items */
+.centeredmenu ul ul {
+   display:none; /* Sub menus are hiden by default */
+   position:absolute;
+   top:31px;
+   left:0;
+   right:auto; /*resets the right:50% on the parent ul */
+   width:300px; /* width of the drop-down menus */
+   margin:0;
+}
+.centeredmenu ul ul li {
+   left:auto;  /*resets the left:50% on the parent li */
+   margin:0; /* Reset the 1px margin from the top menu */
+   clear:left;
+   width:100%;
+}
+.centeredmenu ul ul li a,
+.centeredmenu ul li.active li a,
+.centeredmenu ul li:hover ul li a,
+.centeredmenu ul li.hover ul li a { /* This line is required for IE 6 and below */
+   	background: url(images/bg/h1-grey.jpg) left center repeat-x;
+	color:#f3f3f3;
+	border:1px solid #696969;
+	border-width: 0 0 1px;
+}
+.centeredmenu ul ul li a:hover,
+.centeredmenu ul li.active ul li a:hover,
+.centeredmenu ul li:hover ul li a:hover,
+.centeredmenu ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
+   background:#696969;
+	color:#FFF;
+}
+
+/* Flip the last submenu so it stays within the page */
+.centeredmenu ul ul.last {
+   left:auto; /* reset left:0; value */
+   right:0; /* Set right value instead */
+}
+
+/* Make the sub menus appear on hover */
+.centeredmenu ul li:hover ul,
+.centeredmenu ul li.hover ul { /* This line is required for IE 6 and below */
+   display:block; /* Show the sub menus */
+}
+
+/* - - - COMMENTS - - - */
+#comments{
+	margin:10px;
+}
+#comments li{
+	list-style-type:none;
+}
+#comments #comments-title,
+#comments #reply-title{
+	margin:10px 0;
+	font-size:12px;
+	color:#666;
+}
+#comments .commentlist{
+	margin: 0 0 20px;
+}
+#comments .commentlist .comment{
+	border-top:1px solid #CCC;
+	padding:10px 0;
+	margin: 0;
+}
+#comments .commentlist .comment .avatar{
+	float:left;
+	margin: 0 10px 10px 0;
+}
+#comments .commentlist .comment .comment-author,
+#comments .commentlist .comment .commentmetadata{
+	font-size:10px;
+	line-height:1.5em;
+	height:1.5em;
+}
+#comments .commentlist .comment .comment-author{
+	font-size:12px;
+}
+#comments .commentlist .comment .commentmetadata a{
+	color:#666;
+	text-decoration:none;
+}
+#comments .commentlist .comment .comment-body{
+	clear:both;
+}
+#comments .commentlist .comment .comment-body p{
+	padding:0;
+	margin: 0 0 1em;
+}
+#comments .commentlist .comment ul{
+	margin:1em 0 1em 0
+}
+#comments .comment-notes{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+}
+#comments .form-allowed-tags{
+	display:none;
+}
+#respond p{
+	padding:0;
+}
+#respond #comment{
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:12px;
+	width:80%;
+	border:1px solid #CCC;
+	background:#FFF;
+	display:block;
+	padding:3px;
+}
+#commentform .required{
+}
+#commentform .comment-form-author input,
+#commentform .comment-form-email input,
+#commentform .comment-form-url input{
+	border:1px solid #CCC;
+	font-size:#666;
+	width:70%;
+	line-height:24px;
+	height:24px;
+	display:block;
+}
+	
+#comments .logged-in-as{
+	font-size:10px;
+	color:#666;
+}
+#comments label{
+	font-size:11px;
+	text-transform:uppercase;
+}
+.hcount .tb {
+    height: 21px;
+}
+
+.page .content .side ul li.tips { float: left; width: 236px; padding: 66px 0 0; background: url(images/contest/healthytips.jpg) no-repeat 0 0; margin-top: 10px }
+.page .content .side ul li.tips ul { float: left; width: 194px; padding: 10px 20px 30px; /* background: #f4f4f4; border: 1px solid #e3e3e3; border-bottom-left-radius:6px; border-bottom-right-radius:6px */ }
+
+/* what happened to  REVIEWS css?! */
+.ourreviews #comments { margin: 0 }
+.ourreviews #reply-title, .ourreviews .comment-notes { display: none }
+.ourreviews #commentform { padding: 15px; background: #ecf2f7; float: left; width: 431px; position: relative; margin: 0 0 31px }
+.ourreviews #submit { float: right; width: 65px; height: 25px; font: bold 13px/25px Arial, Helvetica, sans-serif; color: #fff; text-align: center; cursor: pointer; background: url(images/post-comment.jpg) no-repeat 0 0; border: none }
+.ourreviews #commentform .rating { position: absolute; left: 15px; bottom: 15px }
+.ourreviews #commentform .rating label { float: left; margin-right: 10px }
+.ourreviews #commentform .stars a { float: left; width: 21px; height: 19px; text-indent: -999em; background: url(images/stars.png) no-repeat 100% 0; margin-right: 2px }
+.ourreviews #commentform .stars a.on { 
+	background-position: 0 0;
+	background-position-x: 0%;
+	background-position-y: 0%;
+}
+.ourreviews #respond #comment { width: 424px }
+.ourreviews #commentform .comment-form-author input, .ourreviews #commentform .comment-form-email input, .ourreviews #commentform .comment-form-url input { width: 424px; padding: 0 3px }
+.page .content ol.commentlist li { color: #333 }
+.page .content .ourreviews ol.commentlist li .date { color: #999 }
+.page .content .ourreviews ol.commentlist li a { text-decoration: none }
+.ourreviews .comment-body .rating { float: left; width: 100%; margin-bottom: 10px }
+.ourreviews .comment-body .rating .star { float: left; width: 16px; height: 15px; margin: 0 1px 0 0; background: url(images/stars.png) no-repeat -16px -19px }
+.ourreviews .comment-body .rating .star.on { background-position: 0 100% }
+.ourreviews .comment-body h3 { margin: 15px 0 0 }
+
+/* whered LANDING CSS GO?! */
+body.landing { background: #fff }
+body.landing .wrap { font-size: 13px; line-height: 16px }
+body.landing .page { width: 971px; padding: 0 0 0 11px; margin: 0 -9px; float: left; background: url(images/landing/topbh.jpg) no-repeat 0 0; position: relative }
+body.landing .page.p { background-image: url(images/landing/topbh-plumb.jpg) }
+body.landing img.limg { float: left; width: 651px; height: 409px }
+body.landing .lform { float: left; width: 277px; padding: 0 16px 0 17px; background: url(images/landing/rar.png) no-repeat 0 0; height: 508px }
+body.landing label { display: block; font-size: 13px; margin: 4px 0 2px; color: #000 }
+body.landing input.text, body.landing textarea { width: 262px; padding: 4px 6px; border: 1px solid #CCC; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35) inset; }
+body.landing input.text#Zip, body.landing input.text#Telephone, body.landing input.text#WaterHeaterSize, body.landing input.text#WaterHeaterType { width: 115px }
+body.landing textarea { height: 66px; margin-bottom: 5px }
+body.landing input.sub { display: block; margin: 20px 0 0 10px }
+body.landing .main { float: left; width: 935px; margin: 30px 10px }
+body.landing #lleft { float: left; width: 621px; padding-right: 18px; border-right: 1px solid #ccc }
+body.landing #lleft h2 { font-size: 24px; line-height: 28px; font-family: "Cabin Condensed", sans-serif; font-weight: 600; color: #000; margin-bottom: 20px }
+body.landing .main strong { color: #000 }
+body.landing .main #lleft h2 strong { color: #666; font-weight: 600; }
+body.landing .lright { float: right; width: 278px }
+body.landing .lright h4 { font: 14px/18px "Cabin Condensed", sans-serif; font-weight: 600; color: #000; margin-bottom: 12px }
+body.landing img.alignnone { display: block }
+body.landing img.alignleft { margin-right: 54px !important }
+body.landing img.alignright { margin: 0 38px 0 48px !important }
+body.landing p { margin: 0 0 10px }
+body.landing .hr { display: block; margin: 60px 0 0; height: 36px; border-top: 1px solid #ccc }
+body.landing blockquote { background: url(images/landing/quotestart.gif) no-repeat 0 0 }
+body.landing .quote { display: block; padding: 22px 40px; color: #666; font-size: 20px; line-height: 28px; font-style: italic; background: url(images/landing/quoteend.gif) no-repeat 82% 90%; }
+body.landing .quote em { display: block; color: #000; margin-top: 15px; font-size: 15px; font-weight: bold }
+body.landing em.disc { display: block; font-size: 11px; line-height: 14px; margin: 0 0 25px }
+body.landing .lright li { display: block; padding-left: 15px; background: url(images/landing/li.gif) no-repeat 0 50%; margin-bottom: 5px }
+body.landing .lright ul { margin-bottom: 30px }
+body.landing input.dsub { display: block; width: 254px; height: 44px; line-height: 44px; font-size: 21px; font-family: "Cabin Condensed", sans-serif; font-weight: 600; color: #fff; text-shadow: -1px -1px 2px rgba(0,0,0,0.3); background: url(images/landing/btn.png) repeat-x 0 0; border: none; border-radius: 8px; cursor: pointer; margin: 23px 0 0 11px }
+body.landing div.bh { display: block; width: 92px; height: 103px; background: url(images/landing/bh.png) no-repeat 0 0 }
+body.landing .ltxt { float: left; width: 632px; height: 114px; padding: 6px 0 0 18px; position: absolute; top: 289px; left: 12px; background: url(images/landing/ltxt.png) repeat-x 0 0 }
+body.landing .ltxt.p { height: 67px; width: 636px; padding: 13px 0 0 14px; top: 329px }
+body.landing .page.ah { background-image: url(images/landing/afterhours-top.jpg) }
+body.landing .page.ah .main { margin-top: 460px }
+body.landing .page.ah #ahphone { display: block; position: absolute; top: 365px; right: 15px; width: 290px; font: 40px/41px "Cabin Condensed", sans-serif; font-weight: 600; color: #063759; text-align: center }
+body.landing .ft { float: left; width: 100% }
+body.landing .bht { line-height: 100%; font-size: 40px; font-family: "Cabin Condensed", sans-serif; font-weight: 600; color: #fff; text-shadow: -1px -1px 2px rgba(0,0,0,0.4); opacity: 0.6; text-transform: uppercase; filter:Alpha(opacity=60) }
+body.landing .ltxt.p .bht { font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 25px; font-weight: bold; font-style: italic; opacity: 0.4; filter:Alpha(opacity=40)  }
+body.landing .lnum { font-size: 32px; line-height: 35px; font-weight: 600; font-family: "Cabin Condensed", sans-serif; text-align: left; text-shadow: -1px -1px 2px rgba(0,0,0,0.4); font-style: italic; color: #fff }
+body.landing div.lnum { display: block; width: 200px; position: absolute; left: 40px; top: 429px; }
+body.landing .ltxt.p .lnum { font-family: "Open Sans", sans-serif; text-align: right }
+body.landing .arrt { position: absolute; top: 431px; left: 286px; font-size: 30px; line-height: 32px; font-family: "Cabin Condensed", sans-serif; color: #fff; text-shadow: -1px -1px 2px rgba(0,0,0,0.4) }
+body.landing .arrt.p { width: 640px; text-align: center; font: 36px/41px Verdana, Geneva, sans-serif; left: 11px; display: block; top: 423px; }
+body.landing .tar { width: 309px; height: 92px; margin: 0 -16px; }
+body.landing .tar p { font-size: 24px; line-height: 32px; color: #fff; text-align: center; }
+body.landing .tar p strong { font-size: 28px; text-shadow: -1px -1px 2px rgba(0,0,0,0.4) }
+body.landing .pref { font-size: 14px; line-height: 20px; font-family: "Cabin Condensed", sans-serif; color: #063e64; display: block; margin: 18px 0 0 }
+body.landing .pref strong { font-weight: 400; color: #047fc4 }
+
+#ppop { position: absolute; top: 10%; left: 50%; display: none; width: 437px; height: 279px; background: url(images/emerg.png) no-repeat 0 0; margin: 140px 0 0 -219px; z-index: 9999 }
+#pfade { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; display: none; z-index: 9998 }
+#px { position: absolute; top: 0; right: 0; width:36px; height: 36px; background: url(images/fx.gif) repeat 0 0 }#container3 .news-archive {clear:both; padding:13px 0 0;}#container3 .news-archive img {border:none; display:inline; box-shadow:none; margin:0 5px 0 0;}
+
+body.landing.d img.limg { width: 651px; height: 335px }
+body.landing.d { background: url(images/landing/bg-dyn.png) repeat-x 0 0 }
+body.landing.d .page.p { background: url(images/landing/topbh-dyn.png) no-repeat 0 0 }
+body.landing.d .main { background:url(images/landing/dyn-pagerep.png) repeat-y 0 0; padding: 20px 17px 20px 29px; margin: 0 0 0 -8px; }
+body.landing.d .pageend { float: left; width: 977px; height: 12px; background: url(images/landing/dyn-pageend.png) no-repeat 0 0; margin: 0 0 6px -8px }
+body.landing.d .lform { height: 489px; margin-top: -75px }
+body.landing.d #lleft { padding-right: 8px }
+body.landing.d .bhlheader { float: left; width: 651px; height: 75px }
+body.landing.d .logo { float: left; width: 236px; height: 65px; margin: 4px 0 0 7px; background: url(images/landing/logo.png) no-repeat 0 0; text-indent: -999em; }
+body.landing.d .bhlheader .tagline { float: left; margin: 14px 0 0 20px; padding: 12px 0 12px 32px; height: 25px; background: url(images/landing/dyn-div.png) no-repeat 0 0; font: 600 21px/25px "Cabin Condensed", sans-serif; color: #333 } 
+body.landing.d div.lnum { font-size: 28px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-style:italic; color: #dadada }
+
+/* HVAC PPC Landing page 
+	https://ninthlink.teamworkpm.net/tasks/2173651
+*/
+body.landing.hvac.d { background: url(images/bg/body-maroon-tall.jpg) repeat-x 0 0; background-color: #5F0602; }
+body.landing.hvac.d .page.p { background: url(images/landing/topbg-mrn.png) no-repeat 0 0; }
+body.landing.hvac.d .lform { background: url(images/landing/top-r-arrow.png) no-repeat 50% 0; }
+body.landing.hvac.d .tar p strong {
+	font: 700 40px "Cabin", helvetica, arial, sans-serif;
+	font-style: italic;
+}
+body.landing.hvac.d .tar p {
+	font: 400 20px "Cabin", helvetica, arial, sans-serif;
+}
+body.landing.hvac.d input.dsub {
+	display: block;
+	width: 254px;
+	height: 56px;
+	cursor: pointer;
+	margin: 18px 0 0 11px;
+	background: url(images/landing/dsub-mrn.png) no-repeat 0 0;
+	line-height: 44px;
+	font: 700 21px "Cabin", helvetica, arial, sans-serif;
+	color: #fff;
+	text-shadow: -1px -1px 2px rgba(0,0,0,0.3), 1px 1px 2px rgba(255,255,255,.3);
+}
+body.landing.hvac.d input.dsub:hover {
+	background-position: 100% 100%;
+}
+body.landing.hvac.d div.lnum {
+	font: 700 30px/32px "Cabin Condensed", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	text-align: right;
+	width: 236px;
+	left: 10px;
+	top: 422px;
+	padding-right: 23px;
+	background: url(images/landing/rt-border-arrow.png) no-repeat 100% 0;
+}
+body.landing.hvac.d div.lnum span { font-size: 22px; color: #888; z-index:99;}
+body.landing.hvac.d .arrt {
+top: 431px;
+left: 286px;
+font: 700 30px "Cabin Condensed", helvetica, arial, sans-serif;
+color: #fff;
+text-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+}
+body.landing.hvac.d .lform .pref p {
+	font: 700 18px "Cabin Condensed", helvetica, arial, sans-serif;
+}
+
+body.landing.hvac.d .copyright p,
+body.landing.hvac.d .copyright p a { font-family: arial, sans-serif; color: #ccc; text-decoration: none; }
+
+body.landing.hvac.d .page .main #lleft > div { clear: both; }
+body.landing.hvac.d #lleft h2 {
+	font: 400 30px "Cabin", sans-serif;
+	color: #666;
+	margin-bottom: 20px;
+}
+body.landing.hvac.d #lleft h2 strong {
+	color: #000;
+	font-weight: 700;
+}
+body.landing.hvac.d #lleft p {
+	font: 400 14px Arial, sans-serif;
+}
+body.landing.hvac.d #lleft p,
+body.landing.hvac.d .lright p {
+	padding-right: 20px;
+}
+
+/* flood & restoration */
+body.landing.page-id-9171,
+body.landing.flood {
+	background: rgb(116,148,11); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(116,148,11,1) 0%, rgba(183,222,33,1) 28%, rgba(255,255,255,1) 55%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(116,148,11,1)), color-stop(28%,rgba(183,222,33,1)), color-stop(55%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(116,148,11,1) 0%,rgba(183,222,33,1) 28%,rgba(255,255,255,1) 55%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(116,148,11,1) 0%,rgba(183,222,33,1) 28%,rgba(255,255,255,1) 55%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(116,148,11,1) 0%,rgba(183,222,33,1) 28%,rgba(255,255,255,1) 55%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(116,148,11,1) 0%,rgba(183,222,33,1) 28%,rgba(255,255,255,1) 55%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74940b', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+body.landing.page-id-9171 .page.p,
+body.landing.flood .page.p {
+	background: url(images/landing/topbh-flood.png) no-repeat 0 0;
+}
+body.landing.page-id-9171 .lform,
+body.landing.flood .lform {
+	background: url(images/landing/rar-flood.png) no-repeat 0 0;
+}
+
+/*resources blockquotes */
+body .bd.resources blockquote { background: url(images/landing/quotestart.gif) no-repeat 0 0 }
+body .bd.resources .quote { display: block; padding: 22px 40px; color: #666; font-size: 20px; line-height: 28px; font-style: italic; background: url(images/landing/quoteend.gif) no-repeat 82% 90%; }
+body .bd.resources .quote em { display: block; color: #000; margin-top: 15px; font-size: 15px; font-weight: bold }
+body .bd.resources .leftmenu .col2 .inner .side-menu + h4 { margin-top: 20px; }
+body .bd.resources .leftmenu .col2 .inner ul.expertise li { margin-top: 12px; }
